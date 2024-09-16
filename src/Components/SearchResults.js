@@ -29,7 +29,7 @@ const SearchResults = (props) => {
             let categoriesQuery = selectedCategories.join(',');
             let url = `https://newsapi.org/v2/top-headlines?q=${encodeURIComponent(searchQuery)}${
                 categoriesQuery ? `&category=${categoriesQuery}` : ''
-            }&apiKey=a5b42d148b934c609f259034b800e11f`;
+            }&apiKey=775c9e455aa4474fa0be87ea5d14ffb5`;
             setLoading(true);
             let data = await fetch(url);
             props.setProgress(40);
